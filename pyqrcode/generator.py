@@ -11,13 +11,25 @@ from pyqrcode.text import add_text_to_image
 
 
 class QrCodeGenerator:
-    def __init__(self, data, outfile, logo=None, sub_logo=None, front_image=None, 
-                 front_color=(0, 0, 0), back_color=(255, 255, 255), bar_style="Square",
-                 outer_eye_style=None, outer_eye_color=None,
-                 inner_eye_color=None, inner_eye_style=None, 
-                 bottom_text=None, bottom_text_color=(0, 0, 0), 
-                 bottom_text_size=42, bottom_text_font=None,
-                 box_size=10, radius_ratio=0.5, 
+    def __init__(self, 
+                 data: str, 
+                 outfile: str, 
+                 logo: str=None, 
+                 sub_logo: str=None, 
+                 front_image: str=None, 
+                 bar_style: str="Square",
+                 front_color: tuple[int, int, int]=(0, 0, 0), 
+                 back_color: tuple[int, int, int]=(255, 255, 255),
+                 outer_eye_style: str=None, 
+                 outer_eye_color: tuple[int, int, int]=None,
+                 inner_eye_color: tuple[int, int, int]=None, 
+                 inner_eye_style: str=None, 
+                 bottom_text: str=None, 
+                 bottom_text_color: tuple[int, int, int]=(0, 0, 0), 
+                 bottom_text_size: int=42, 
+                 bottom_text_font: str=None,
+                 box_size: int=10, 
+                 radius_ratio: float=0.5, 
             ):
         
         self.data = data
