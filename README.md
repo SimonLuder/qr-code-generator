@@ -64,7 +64,7 @@ This generates the following output:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusernamqr-code-generator.git
+   git clone https://github.com/SimonLuder/qr-code-generator.git
    cd qr-code-generator
    ```
 
